@@ -1,0 +1,7 @@
+    - Props
+
+
+1) Props stands for Properties.
+2) Props used for transfer data from one component to another component.
+3) Props are read only.
+4) Props are just like function in JavaScript.

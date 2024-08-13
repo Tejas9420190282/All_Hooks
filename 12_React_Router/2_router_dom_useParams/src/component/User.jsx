@@ -3,10 +3,12 @@ import { useParams } from 'react-router-dom'
 
 function User() {
 
-    const params = useParams();
+    const params = useParams()
 
     return (
-        <h1>the Username is : {params.username}</h1>
+        <>
+            <h1>The user is {params.username}</h1>
+        </>
     )
 }
 

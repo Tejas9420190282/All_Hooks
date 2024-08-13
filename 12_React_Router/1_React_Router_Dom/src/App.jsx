@@ -1,73 +1,41 @@
-import { useState } from 'react'
+
 import './App.css'
 
-import {createBrowserRouter, RouterProvider} from "react-router-dom"
-
-import Nav from './component/Nav'
-import Home from './component/Home'
-import About from './component/About'
-import Contact from './component/Contact'
-import Login from './component/Login'
-import User from './component/User'
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
+import Navbar from './components/Navbar'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Login from './components/Login'
 
 function App() {
   
   const router = createBrowserRouter ([
     {
-      path : "/home",
-      element : <><Nav /><Home /></>
+      path: "/",
+      element: <><Navbar /> <Home /></>
+    },
+    {
+      path: "/login",
+      element: <><Navbar/> <Login /></>
+    },
+    {
+      path: "/contact",
+      element: <><Navbar/><Contact/></>
     },
     {
       path : "/about",
-      element : <><Nav /><About /></>
-    },
-    {
-      path : "/contact",
-      element : <><Nav /><Contact /></>
-    }, 
-    {
-      path : "/login",
-      element: <><Nav /><Login /></>
-    },
-    {
-      path : "/user/:username",
-      element : <><Nav /><User /></>
+      element: <><Navbar/><About/></>
     }
   ])
+  
 
   return (
     <>
-        
-
-        <RouterProvider router = {router} />
+      
+      <RouterProvider router = {router} />
     </>
   )
 }
 
 export default App
-
-
-
-/* 
-
-  1) npm i react-router-dom
-
-  2) import {createBrowserRouter} from 'react-router-dom'     in App.jsx
-
-  3) const route = createBrowserRouter ([
-        {
-          path : "/abc",
-          element : <ABC />
-        },
-        
-          path : "/pqr",
-          element : <PQR />
-        },
-        
-          path : "/xyz",
-          element : <XYZ />
-        }
-      ])
-
-  4)  
-*/

@@ -1,11 +1,9 @@
-import { createContext, useState } from 'react'
+import { createContext } from 'react'
 import './App.css'
-
 import Comp1 from "./component/Comp1"
 
 
 /* 1) create provider */
-
 export const  data = createContext();
 
 function App() {
@@ -20,14 +18,10 @@ function App() {
           <Comp1 />
         </data.Provider>
     </>
-
   )
 }
 
 export default App
-
-
-
 
 /*  
     1) Context create

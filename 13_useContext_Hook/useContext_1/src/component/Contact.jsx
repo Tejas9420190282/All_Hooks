@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import Footer from './Footer'
 import { AppContext } from '../context/AppContext'
 
 function Contact() {

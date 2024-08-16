@@ -1,0 +1,129 @@
+
+
+    - Git
+
+1) Version Control system is a tool that helps to track to changes/history in code 
+2) Git helps in collabration (2 or more people works on same project, It helps for managing the code)
+3) Git is a Version Control system.
+4) It is Popular, Freee and open Source, Fast and scalable
+
+
+    - Commands for Git 
+
+    1) git config --global user.name “[firstname lastname]”  =====>  set a name that is identifiable for credit when review version history.
+    
+    2) git config --global user.email “[valid-email]”  =====>  set an email address that will be associated with each history marker
+
+    3) git config --list  =====>  Shows what we have changes 
+
+
+    - Github
+
+1) Website that allows developers to store and manage their code using Git.
+
+    - commit    ===> save the changes in the code.
+    - modified  ===> changes in code, but not in github repo's code is known as modify   
+    - Untracked ===> new files that git doesn't tract (When we create new file and doesn't upload commit on repo is a type of Untrack.)
+    - Unmodify  ===> unchange file
+    - staged    ===> When we add (using "git add ." or "git add [filename]") the the file but not commit then the file is in Staged status. 
+
+
+
+Q)  What is README.md and how to change it?
+--> 1) README.md ===> README.md is a file with extension of .md
+    -  in this file, we can write notes about that project.
+    
+    2) steps to changes README.md file
+        i) click on README.md file
+       ii) edit the notes 
+      iii) click on "Commit changes" button which is top-right-button.
+       iv) write a short not on "Commit message" section
+        v) click on "Commit Changes" button.
+
+
+
+    -   Imp basic git Commands
+
+    1) git clone "repo URL" =====> When we want to open any repo which is in any githup account in VSCode the we use this Command
+
+    2) cd      =====> change directory
+       cd ..   =====> back from currect directory/folder
+       clear   =====> clear the terminal
+       ls      =====> shows the list of files in repo
+       ls -a   =====> shows all/hidden files in repo
+       
+       mkdir [folder/directory-name] ========> for create new directory/folder
+
+    3) git status =====> shows status.
+    
+
+    -   imp Add & Commit git Commands
+
+    1)  Add =====> (git add [file-name] )  =======> add specific file.
+            =====> (git add .)             =======> add all files.
+    -   adds new or changed files in your working directory
+    -   add a file as it looks now to your next commit (stage)
+    -   If we want to commit the file the the first stape is add the file using command (git add [file-name] ) and then we can commit using (git commit -m "some-message")
+
+    
+
+    2)  commit =====> (git commit -m "some-message")
+    -   It saves the changes in git repo.
+    -   If we want to commit the file the the first stape is add the file using command (git add [file-name] ) and then we can commit using (git commit -m "some-message")
+
+    
+    - imp Push Command
+
+    1) push =====> git push origin main
+    -   Upload local (personal PC) repo content to remote (githup) repo. 
+
+
+
+
+-   Personal pc's folder to github repo managment.
+
+    1) init  =====> (git init)
+    -  used to create git repo.
+
+    2) git add . 
+
+    3) git commit -m "[message]"
+
+    4) git status
+
+    5) create repo manually
+
+    6) git remote add origin ["repo-URL"]  ====> The git remote add origin ["repo-URL"] command is used to link a local(personal pc) Git repository to a remote(githup) repository.
+
+    7) git branch  ====> (to check branch)
+
+    8) git branch -M main  ====> (to rename branch)
+
+    9) git push -u origin main
+
+
+-   steps of new file add in same githup repo
+
+    1) create new file
+
+    2) git add .
+
+    3) git commit -m "[message]"
+
+    4) git push
+
+
+-   flow of githup repo to pc 
+
+    1) githup repo
+
+    2) clone
+
+    3) changes in code
+
+    4) add
+
+    5) commit
+
+
+

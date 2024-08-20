@@ -3,13 +3,20 @@ import './App.css'
 import useStore from './store'
 
 function App() {
-  
+/*   
   const counter = useStore((state) => state.counter)
   const increaseCounter = useStore((state) => state.increaseCounter)
   const decreaseCounter = useStore((state) => state.decreaseCounter)
   const increaseBy = useStore((state) => state.increaseBy)
   const decreaseBy = useStore((state) => state.decreaseBy)
   const resetCounter = useStore((state) => state.resetCounter)
+ */
+  const {counter,
+    increaseCounter,
+    decreaseCounter, 
+    increaseBy,
+    decreaseBy,
+    resetCounter} = useStore()
 
 //  const [counter, setCounter] = useState(0)
 

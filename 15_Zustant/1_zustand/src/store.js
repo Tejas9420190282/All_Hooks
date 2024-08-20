@@ -1,12 +1,17 @@
 import create from "zustand"
 
+const initialState = {
+    counter: 0,
+}
+
 const useStore = create((set) => ({
-    counter : 0,
+    
+    ...initialState,
     increaseCounter : () => set(state => ({counter : state.counter + 1})),
     decreaseCounter : () => set(state => ({counter : state.counter - 1})),
     increaseBy : (num) => set(state => ({counter : state.counter + num})),
     decreaseBy : (num) => set(state => ({counter : state.counter - num})),
-    resetCounter : () => set(state => ({counter : 0}))
+    resetCounter : () => set(initialState)
 }))
 
 export default useStore;

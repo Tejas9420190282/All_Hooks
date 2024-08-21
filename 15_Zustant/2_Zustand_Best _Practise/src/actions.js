@@ -4,7 +4,7 @@ export const incrementCounter = () => {
     useStore.setState((state) => ({ counter: state.counter + 1 }))
 } 
 
-export  const decrementCounter = () => { 
+export const decrementCounter = () => { 
     useStore.setState((state) => ({ counter: state.counter - 1 }))
 }
 

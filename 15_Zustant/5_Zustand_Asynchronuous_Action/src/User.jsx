@@ -15,7 +15,7 @@ function User() {
       <div className="flex flex-wrap mt-10">
         {users.map((user) => (
           <div className="basis-1/4 p-2 ">
-            <h3 className="bg-white text-black mt-5 mx-3">{user.name}</h3>
+            <h3  className="bg-white text-black mt-5 mx-3">{user.name}</h3>
           </div>
         ))}
       </div>

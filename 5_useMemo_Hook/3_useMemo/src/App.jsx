@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 
 import './App.css'
@@ -14,11 +15,12 @@ function App() {
       <Memo_hook />
  
       <hr />
-{/* 
+ 
       <No_useMemo_hook />
- */}
+
     </>
   )
 }
 
 export default App
+ 

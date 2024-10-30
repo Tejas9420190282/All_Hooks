@@ -14,21 +14,22 @@ function App() {
   return (
     <>
      
+{/*       
       <div>
         <h1>Learning useCallback</h1>
         <Memo_Hook />
         <h1>{add}</h1>
         <button onClick={() => setAdd(add+1)}>Addition</button>
       </div>
- 
-{/* 
+ */} 
+
       <div>
         <h1>Learning useCallback</h1>
         <Without_memo_hook />
         <h1>{add}</h1>
         <button onClick={() => setAdd(add+1)}>Addition</button>
       </div>
- */}
+
     </>
   )
 }

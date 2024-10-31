@@ -20,3 +20,7 @@ function App() {
 }
 
 export default App
+
+
+
+// Higher order components = a function that takes a components as an input and returns a new components. it's like adding extra new feature to a components without changing its actual code.

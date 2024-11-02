@@ -1,14 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Click_Counter from './componens/Click_Counter'
+import Hover_Counter from './componens/Hover_Counter'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
+        <Click_Counter />
 
+        <h1 className='mt-20 mb-20'>=================</h1>
+
+        <Hover_Counter />        
     </>
   )
 }

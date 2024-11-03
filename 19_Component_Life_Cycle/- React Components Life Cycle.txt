@@ -1,0 +1,86 @@
+	- React Components Life Cycle
+
+
+- There are 3 phases in Component life cycle.
+	1) Mounting
+	2) Updating
+	3) UnMounting
+
+	Phase 1) Mounting
+-   The mounting phase occurs when a component is created and added to the DOM for the first time. This includes only the initial rendering.
+
+		1.a) Constractor (props)
+			-  Constraction calls before the mounting (creation) of component. and calls only a single time.
+			-  super(props) must be called in the constractor to allow this.propto be accessible.
+ 	
+		1.b) Static getDrivedStateFromProp (props, state)
+			-  this function is use when we want to update the state according to props then this function is usefull
+			-  used method that allows updating the state based on changes in props, even before rendering.
+			-  It returns an object to update the state or null if no change is needed.
+
+	
+		1.c) render()
+			-  It reurns the JSX that represents the UI of component
+			-  React calls render method every time its needs to build UI.
+
+	
+		1.e) componentDidMount()
+			-  Called after the component is mounted in the DOM.
+			-  this method is usefull when we want to cals the API, setTimeOUt or addEventsListeners and many more.
+		
+
+
+	Phase 2) Updating
+-  The updating phase happens whenever a component’s state or props change. This causes the component to re-render.
+
+		2.a) static getDerivedStateFromProps(props, state)
+			-  This method is also called in the updating phase. It’s used to update the state based on props and is run before every render.
+
+
+		2.b)  shouldComponentUpdate(nextProps, nextState)
+			-  This method determines whether should re-render or not. It can be used to improve performance by avoiding unnecessary renders.
+			-  it returns true by default. It its return false, the component doesn't update.
+
+		
+		2.c) render()
+			- this method calls again in updating phase
+
+		2.d) getSnapshotBeforeUpdate(prevProps, prevState)
+			- this function calls right before the changes in DOM.
+			- It's return snapshot value before updates the component.
+		
+		3.e) componentDidUpdate(prevProps, prevState, snapshot):
+			- If we wants to call API in Updating phase then this method is usefull.
+			- Called immediately after the component updates. This is useful for performing actions based on previous state or props, such as fetching updated data based on prop changes or interacting with the DOM after the update.
+
+
+	Phase 3) UnMounting 
+- In Unmounting phase, the components removed from DOM
+- this can happend when component is no longer needed, like when we click on button and gape nevigate and new compnents call.
+
+		3.a) componentWillUnmount()
+			-  called just before the component is unmount and destroyed.
+			-  used for cleanup, like removing event listeners or canceling network requests.
+
+
+
+
+
+
+	- Error life cycle in ReactJs
+
+- In REact, Error Handling Lifecycle are specially design to catch errors that occure in the render phase or in lifecycle method of child components.
+
+		a) static getDerivedStateFromError(error)
+
+			- It is called when an error is thrown in a descendant component during rendering, in lifecycle methods, or in constructors.
+			- This method allows you to update the component's state based on the error, enabling a fallback UI to be displayed when an error occurs.
+			- It receives the error as a parameter and should return an object to update the state or null if no state update is needed.
+
+		
+		b) componentDidCatch(error, info)
+			- This method is called after an error has been thrown by a descendant component.
+			- It receives two arguments:
+				i) error: The error that was thrown.
+				ii) info: An object with a componentStack key that contains a stack trace of where the error occurred.
+			- This method is often used to log error information to an external service.

@@ -3,6 +3,7 @@ import { data1, data2 } from '../App';
 
 function Comp3() {
 
+    // step 3 =====> use useContext hook
     const FName = useContext(data1);
     const LName = useContext(data2);
 

@@ -2,7 +2,7 @@
 I have to send data from App.jsx to Comp3.jsx if App.jsx calls <Com1 /> and Comp1 calls <Comp2 /> and Comp2 calls <Comp3 />.
 */
 
-
+ 
 
 import "./App.css";
 import { createContext } from "react";

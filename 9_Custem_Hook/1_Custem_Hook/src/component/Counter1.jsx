@@ -1,17 +1,21 @@
-import React from 'react'
-import UseCounter from '../custem_hook/useCounter'
+import React from "react";
+import UseCounter from "../custem_hook/useCounter";
 
 function Counter1() {
-
-    const [count, increment, decrement] = UseCounter();
+    const [count, increment, decrement, reset] = UseCounter();
 
     return (
         <>
-            <button onClick={increment}>+1</button>
             <p>count : {count}</p>
-            <button onClick={decrement}>-1</button>
+
+            <div style={{display:"flex", justifyContent:"center", marginTop:"10px", marginBottom:"10px"  ,gap:"20px"}}>
+                <button onClick={increment}>+1</button>
+                <button onClick={decrement}>-1</button>
+            </div>
+
+            <button onClick={reset}>Reset Count</button>
         </>
-    )
+    );
 }
 
-export default Counter1
+export default Counter1;

@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import './App.css'
-import Theme from './components/Theme'
+
+import "./App.css";
+import Counter from "./component/Counter";
 
 
 function App() {
+    
 
-  return (
-    <>
-        <Theme /> 
-    </>
-  )
+    return (
+      <>
+          <Counter /> 
+      </>
+    );
 }
 
-export default App
+export default App;

@@ -24,6 +24,12 @@ function App() {
     a.current = a.current + 1;
     console.log(`Re-rendering and value of a is, ${a.current}`);     // then the value of a increses by whne the code re-render
   })
+
+
+  /*  
+      -  When we call useEffect without any dependency, that useEffect excutes after every render of component.
+      -  ie. When any change happend in same page, the useEffect calls . 
+  */
   
   
   return (

@@ -1,0 +1,50 @@
+
+
+		1) useState hook
+	
+	- The useState hook is a special function in React that allows functional components to add and manage state. 
+	- state in React refers to values or data that can changes during the life cycle of components.
+
+
+
+		Qn) What is state...?
+	
+	- State is like a veriable that React watches for changes.
+	- when the state changes, the component re-renders to show the updated values.
+
+
+		Qn) What is useState...?
+	
+	- useState is a React hook (a build-in function) used to add state to functional components.
+	- Before hooks, state was only possible in class components
+
+
+
+
+		*) Syntax of useState:
+
+	- const [state, setState] = useState(initialValue);
+
+		i)   state: The current value of the state.
+		ii)  setState: A function used to update the state.
+		iii) initialValue: The initial value of the state.
+
+
+
+		Qn) How useState Works:
+
+	- useState creates a piece of state and gives you two things:
+			i)  The current value of the state.
+			ii) A function to update the value.
+
+
+		- Re-rendering:
+
+	- When you call setState to update the state, React automatically re-renders the component to reflect the new state.
+
+
+
+
+
+
+

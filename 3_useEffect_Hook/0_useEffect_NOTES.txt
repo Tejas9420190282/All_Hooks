@@ -1,0 +1,53 @@
+			- UseEffect Hook
+
+	- The useEffect hook is one of the most important hooks in React. It lets you perform side effects in your functional components. 
+	  A side effect is anything that affects something outside your component, like updating the DOM, fetching data from an API, 
+	  or setting up subscriptions.
+
+
+
+			Qn) Why useuseEffect....?
+	- React component are functional and re-render whenever state or props changes. 
+	  useEffect helps you specific code after React has updated the UI.
+
+
+
+			Syntax:
+
+		useEffect(() => {
+  			// Your side effect code here
+		}, [dependencies]);
+
+
+		i) Effect Function:
+
+	- The first argument is a function where you put your side effect code.
+
+		ii) Dependencies:
+
+	- The second argument is an array of values. useEffect only runs when one of these values changes.
+	- If you don't provide this array, the effect will run after every render.
+	- An empty array ([]) makes the effect run only once (after the initial render).
+
+
+
+
+			*) Condition about dependencies.....
+
+		i) no Dependency
+	- when we don't give any dependency to useEffect, then it will run after every render. i.e it will run after every change in same page.
+
+		ii) Empty Dependency []
+	- When we give empty dependency to useEffect, then it will run at fist time of rendering. i.e it will run when page loads first time.
+
+
+		iii) no Dependency [count]
+	- When we give any dependency to useEffect, it will run  after change the value of given dependency veriable.
+	- i.e in given case, we will given [count] as dependency. When count increase or decrese or change the value of count, then the useEffect runs.
+
+
+
+
+
+
+

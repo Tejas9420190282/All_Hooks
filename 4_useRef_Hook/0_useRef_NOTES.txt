@@ -1,0 +1,18 @@
+
+			- useRef hook
+	
+	- The useRef hookin React is like special box that can hold a value without causing your components to re-render whane the value changes. 
+	  It's often used to access and interacts with DOM elements directly OR store a value that  persists between renders.
+
+
+	
+			Qn) What is useRef...?
+	i) Storing a refrence of a DOM elements: ====> If you need to directly interact with DOM element, like focusing on an input field, 
+							useRef gives you a way to access that element.
+
+	ii) Storing mutuable values : ======> If you want to store a value that doesn't trigger a re-render when it changes (like a timer ID or a previous state), useRef is a great choice.
+
+
+
+		- useRef creates a refrence
+		- 

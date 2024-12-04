@@ -11,25 +11,25 @@ function App() {
     };
 
     const handleCurserOnPointer = () => {
-      inputRef.current.focus();
+        inputRef.current.focus();
     };
 
     const handleChangeCLR = () => {
-      inputRef.current.style.color = "red";
+        inputRef.current.style.color = "red";
     };
 
     const handleSelectText = () => {
-      inputRef.current.select();
+        inputRef.current.select();
     };
 
     const handleCopyText = () => {
-      inputRef.current.select();
+        inputRef.current.select();
 
-      if (document.execCommand("copy")) {
-        setTimeout(() => {
-          alert("Copy to clickboard!")
-        }, 1000);
-      }
+        if (document.execCommand("copy")) {
+            setTimeout(() => {
+                alert("Copy to clickboard!");
+            }, 1000);
+        }
     };
 
     return (

@@ -36,7 +36,7 @@ function App() {
         <h1>Minus : {minus}</h1>
         <button onClick={() => setMinus(minus - 5)}>Minus - 5</button>
 
-        {   <With_UseCallback_2 ABC={ABC} />               //  OR    <Without_UseCallback_1 PQR={PQR} />  
+{       <With_UseCallback_2 ABC={ABC} />               //  OR    <Without_UseCallback_1 PQR={PQR} />  
 }
 
     </>

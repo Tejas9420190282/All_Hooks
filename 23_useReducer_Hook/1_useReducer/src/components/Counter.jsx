@@ -23,7 +23,7 @@ function Counter() {
             <div>
                 <h1>Count : {count}</h1>
 
-                <div style={{display:"flex"}}>
+                <div>
                     <button onClick={() => dispatch("DECREMENT")}>-1</button>
                     <button onClick={() => dispatch("INCREMENT")}>+1</button>
                 </div>

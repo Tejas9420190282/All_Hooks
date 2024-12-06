@@ -5,10 +5,11 @@ function With_useMemo_Hook() {
     const [add, setAdd] = useState(0);
     const [minus, setMinus] = useState(100);
 
-    const multiply = useMemo( function multiplication(){
+    const multiply = useMemo( function multiplication() {
 
         console.log("=========+ With useMemo hook +=========")
-        return add*10
+        return add*10;
+
     }, [add])
     
     
@@ -28,6 +29,8 @@ function With_useMemo_Hook() {
 }
 
 export default With_useMemo_Hook
+
+
 
 
 /* 
